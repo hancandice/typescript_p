@@ -1,0 +1,9 @@
+{
+  "name": "typechain",
+  "version": "1.0.0",
+  "description": "Building blockchain with TypeScript",
+  "main": "index.js",
+  "repository": "https://github.com/hancandice/typechain",
+  "author": "Candice Han <jeeyoung.han82@gmail.com>",
+  "license": "MIT"
+}
