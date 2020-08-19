@@ -5,5 +5,13 @@
   "main": "index.js",
   "repository": "https://github.com/hancandice/typechain",
   "author": "Candice Han <jeeyoung.han82@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "start": "tsc-watch --onSuccess \" node dist/index.js\" "
+  },
+  "devDependencies": {
+    "tsc-watch": "^4.2.9",
+    "typescript": "^3.9.7",
+    "typescript-tools": "^0.3.1"
+  }
 }
