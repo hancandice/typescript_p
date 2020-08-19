@@ -13,7 +13,7 @@ class Block {
     typeof aBlock.index === "number" &&
     typeof aBlock.hash === "string" &&
     typeof aBlock.previousHash === "string" &&
-    typeof aBlock.timestamp === "string" &&
+    typeof aBlock.timestamp === "number" &&
     typeof aBlock.data === "string";
 
   public index: number;
@@ -70,6 +70,7 @@ const createNewBlock = (data: string): Block => {
     newTimestamp,
     data
   );
+  addBlock(newBlock);
   return newBlock;
 };
 
@@ -100,5 +101,12 @@ const addBlock = (candidateBlock: Block): void => {
     blockchain.push(candidateBlock);
   }
 };
+
+createNewBlock("second block");
+createNewBlock("third block");
+createNewBlock("fourth block");
+createNewBlock("fifth block");
+
+console.log(blockchain);
 
 export {};
